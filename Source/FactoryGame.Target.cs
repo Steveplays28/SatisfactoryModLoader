@@ -9,11 +9,11 @@ public class FactoryGameTarget : TargetRules
 	{
 		Type = TargetType.Game;
 		LinkType = TargetLinkType.Modular;
-		
+
 		CppStandard = CppStandardVersion.Cpp17;
-		ExtraModuleNames.AddRange(new[] {"FactoryGame"});
+		ExtraModuleNames.AddRange(new[] { "FactoryGame", "SML", "FicsitChat" });
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		
+
 		bOverrideAppNameForSharedBuild = true;
 
 		bUseChecksInShipping = true;
