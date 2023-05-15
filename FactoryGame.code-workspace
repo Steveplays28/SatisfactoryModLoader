@@ -10,7 +10,18 @@
 		}
 	],
 	"settings": {
-		"typescript.tsc.autoDetect": "off"
+		"typescript.tsc.autoDetect": "off",
+		"files.associations": {
+			"LICENSE": "plaintext",
+			"*.toml": "toml",
+			"*.json5": "jsonc",
+			"*.conf": "properties",
+			"*.hjson": "toml",
+			".gitignore": "ignore",
+			".packwizignore": "ignore",
+			"*.sln": "properties",
+			"format": "cpp"
+		}
 	},
 	"extensions": {
 		"recommendations": [
