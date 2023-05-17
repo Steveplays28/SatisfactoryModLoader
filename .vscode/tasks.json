@@ -432,6 +432,12 @@
 			"options": {
 				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
 			}
+		},
+		{
+			"label": "Kill Satisfactory process",
+			"command": "taskkill /F /IM FactoryGame-Win64-Shipping.exe",
+			"type": "shell",
+			"problemMatcher": []
 		}
 	]
 }
