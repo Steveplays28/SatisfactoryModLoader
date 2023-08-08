@@ -113,16 +113,15 @@ Mods/*/Metadata/Crypto.json
 
 # Visual Studio Code
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
+**/*.code-workspace
 
 # Local History for Visual Studio Code
 .history/
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# Unreal Engine ignore file
+.ignore
 
 # Anything below this line should be categorized into a section above instead!

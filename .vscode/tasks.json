@@ -2,6 +2,168 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"label": "FactoryEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FactoryEditor",
+				"Win64",
+				"Debug",
+				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
+			}
+		},
+		{
+			"label": "FactoryEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FactoryEditor",
+				"Win64",
+				"Debug",
+				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FactoryEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
+			}
+		},
+		{
+			"label": "FactoryEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FactoryEditor",
+				"Win64",
+				"Debug",
+				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
+			}
+		},
+		{
+			"label": "FactoryEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FactoryEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
+			}
+		},
+		{
+			"label": "FactoryEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FactoryEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FactoryEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
+			}
+		},
+		{
+			"label": "FactoryEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FactoryEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
+			}
+		},
+		{
+			"label": "FactoryEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FactoryEditor",
+				"Win64",
+				"Development",
+				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
+			}
+		},
+		{
+			"label": "FactoryEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"FactoryEditor",
+				"Win64",
+				"Development",
+				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"FactoryEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
+			}
+		},
+		{
+			"label": "FactoryEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"FactoryEditor",
+				"Win64",
+				"Development",
+				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
+			}
+		},
+		{
 			"label": "FactoryGame Win64 Debug Build",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
@@ -164,60 +326,6 @@
 			}
 		},
 		{
-			"label": "FactoryGame Win64 Shipping Build",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"FactoryGame",
-				"Win64",
-				"Shipping",
-				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
-			}
-		},
-		{
-			"label": "FactoryGame Win64 Shipping Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"FactoryGame",
-				"Win64",
-				"Shipping",
-				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"dependsOn": [
-				"FactoryGame Win64 Shipping Clean"
-			],
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
-			}
-		},
-		{
-			"label": "FactoryGame Win64 Shipping Clean",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
-			"args": [
-				"FactoryGame",
-				"Win64",
-				"Shipping",
-				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
-			}
-		},
-		{
 			"label": "FactoryGame Win64 Test Build",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
@@ -272,13 +380,13 @@
 			}
 		},
 		{
-			"label": "FactoryGameEditor Win64 Debug Build",
+			"label": "FactoryGame Win64 Shipping Build",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"FactoryGameEditor",
+				"FactoryGame",
 				"Win64",
-				"Debug",
+				"Shipping",
 				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
 				"-waitmutex"
 			],
@@ -289,19 +397,19 @@
 			}
 		},
 		{
-			"label": "FactoryGameEditor Win64 Debug Rebuild",
+			"label": "FactoryGame Win64 Shipping Rebuild",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Build.bat",
 			"args": [
-				"FactoryGameEditor",
+				"FactoryGame",
 				"Win64",
-				"Debug",
+				"Shipping",
 				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"dependsOn": [
-				"FactoryGameEditor Win64 Debug Clean"
+				"FactoryGame Win64 Shipping Clean"
 			],
 			"type": "shell",
 			"options": {
@@ -309,13 +417,13 @@
 			}
 		},
 		{
-			"label": "FactoryGameEditor Win64 Debug Clean",
+			"label": "FactoryGame Win64 Shipping Clean",
 			"group": "build",
 			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
 			"args": [
-				"FactoryGameEditor",
+				"FactoryGame",
 				"Win64",
-				"Debug",
+				"Shipping",
 				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
 				"-waitmutex"
 			],
@@ -323,115 +431,7 @@
 			"type": "shell",
 			"options": {
 				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
-			}
-		},
-		{
-			"label": "FactoryGameEditor Win64 DebugGame Build",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"FactoryGameEditor",
-				"Win64",
-				"DebugGame",
-				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
-			}
-		},
-		{
-			"label": "FactoryGameEditor Win64 DebugGame Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"FactoryGameEditor",
-				"Win64",
-				"DebugGame",
-				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"dependsOn": [
-				"FactoryGameEditor Win64 DebugGame Clean"
-			],
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
-			}
-		},
-		{
-			"label": "FactoryGameEditor Win64 DebugGame Clean",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
-			"args": [
-				"FactoryGameEditor",
-				"Win64",
-				"DebugGame",
-				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
-			}
-		},
-		{
-			"label": "FactoryGameEditor Win64 Development Build",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"FactoryGameEditor",
-				"Win64",
-				"Development",
-				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
-			}
-		},
-		{
-			"label": "FactoryGameEditor Win64 Development Rebuild",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Build.bat",
-			"args": [
-				"FactoryGameEditor",
-				"Win64",
-				"Development",
-				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"dependsOn": [
-				"FactoryGameEditor Win64 Development Clean"
-			],
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
-			}
-		},
-		{
-			"label": "FactoryGameEditor Win64 Development Clean",
-			"group": "build",
-			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
-			"args": [
-				"FactoryGameEditor",
-				"Win64",
-				"Development",
-				"C:\\Misc\\SatisfactoryModLoader\\FactoryGame.uproject",
-				"-waitmutex"
-			],
-			"problemMatcher": "$msCompile",
-			"type": "shell",
-			"options": {
-				"cwd": "C:\\Program Files\\Unreal Engine - CSS"
-			}
+			},
 		},
 		{
 			"label": "Kill Satisfactory process",
